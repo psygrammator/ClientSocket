@@ -1,13 +1,15 @@
 package top.jsoft;
 
+import java.io.IOException;
+
 /**
- * Hello world!
- *
+ * Created by psygrammator
+ * group jsoft.top
  */
 public class App 
 {
-    public static void main( String[] args )
-    {
-        System.out.println( "Hello World!" );
+    public static void main( String[] args ) throws IOException {
+        SocketClient socketClient = new SocketClient();
+        socketClient.startClient();
     }
 }
